@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css libary-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- css libary-->
+</head>
+<body>
+    <div class="container">
+        <div id="parent-form">
+            
+            <form id="#form"  novalidate="true" method="POST">
+                <div class="row">
+                    <div class="form-title col-md-12">
+                        <h3>Kayıt formu</h3>
+                    </div>
+
+                    <div class="input-one col-lg-6">
+                        <label> Ad : <span>*</span></label>
+                        <input type="text" class="form-control" name="user" id="inputName" placeholder="ad">
+                        <div class="error-boş"></div>
+                    </div>
+
+                    <div class="input-tow col-lg-6">
+                        <label> Soyad : <span>*</span></label>
+                        <input type="text" class="form-control" name="lastname" id="inputsoyad" placeholder="soyad">
+                        <div class="error-boş"></div>
+                    </div>
+
+                    <div class="input-three col-md-12">
+                        <label>Email : <span>*</span></label>
+                        <input type="email" class="form-control" name="email" id="inputEmail"  required="false" placeholder="Email" data-error="Bruh, that email address is invalid">
+                        <div class="error-boş"></div>
+                    </div>
+
+                    <div class="input-submit text-center col-sm-12">
+                        <button type="submit" class="btn btn-primary" id="submit-form">Kabul Et</button>
+                    </div>
+                </div>
+            </form> 
+        </div>
+    </div>
+
+
+
+    <!-- Script libraries -->
+    <script src="../bower_components/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- ES6 Modules libraries -->
+
+    <script src="./main.js"></script>
+</body>
+</html>
